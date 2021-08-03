@@ -78,7 +78,7 @@ webalert("请输入$tiaojian1!");
 if(strlen($shuru1)>20){
 webalert("请输入$tiaojian1!(18字以内)");
 }
-$pagesize = "10";
+$pagesize = "20";
 $page = trim($_GET["page"]);
 $paix = trim($_GET["a"]); //可以写死字段
 $ascx = trim($_GET["d"]); //可以写死DESC或ASC
@@ -140,7 +140,7 @@ echo "\r\n<tbody>\r\n";
 echo "\r\n<tr>\r\n";
 //echo "<td><nobr>$ii</nobr></td>\r\n";
 foreach ($lina as $keya => $vale ) {
-//另有高级后台版出售：https://item.taobao.com/item.htm?id=585333857970
+
 if(strlen(Trim($vale))<1){$vale = "-";} //空值情况
 echo "<td data-label=\"{$keya}：\">$vale</td>\r\n";
 }
