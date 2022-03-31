@@ -75,7 +75,7 @@ webalert("请正确输入验证码！");
 if(!$shuru1){
 webalert("请输入$tiaojian1!");
 }
-if(strlen($shuru1)>20){
+if(strlen($shuru1)>200){
 webalert("请输入$tiaojian1!(18字以内)");
 }
 $pagesize = "20";
